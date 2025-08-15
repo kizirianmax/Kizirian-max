@@ -1,12 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kizirian Max</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kizirian Max – Agentes de IA para o seu negócio</title>
+  <meta name="description" content="A plataforma com agentes de IA prontos para tarefas reais: atendimento, vendas, suporte, conteúdo e muito mais." />
+  <link rel="icon" href="https://fav.farm/⚡" />
+  <!-- Tailwind CDN (sem build, funciona no Vercel direto) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* detalhes sutis */
+    .glass { backdrop-filter: blur(8px); background: rgba(255,255,255,0.06); }
+    .grad { background: radial-gradient(1200px 600px at 20% -10%, rgba(59,130,246,.25), transparent 50%),
+                         radial-gradient(800px 400px at 120% 10%, rgba(168,85,247,.25), transparent 50%); }
+  </style>
 </head>
-<body>
-  <h1>Bem-vindo ao Kizirian Max</h1>
-  <p>O projeto de IA mais inteligente e simples do mundo está começando!</p>
+<body class="bg-slate-950 text-slate-100 grad min-h-screen">
+  <!-- Navbar -->
+  <header class="sticky top-0 z-40 border-b border-white/10 bg-slate-950/70 glass">
+    <nav class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+      <a href="#" class="font-semibold tracking-tight text-xl">Kizirian<span class="text-indigo-400">Max</span></a>
+      <div class="hidden gap-6 md:flex text-sm text-slate-300">
+        <a href="#features" class="hover:text-white">Recursos</a>
+        <a href="#como-funciona" class="hover:text-white">Como funciona</a>
+        <a href="#planos" class="hover:text-white">Planos</a>
+      </div>
+      <a href="#comecar" class="rounded-xl bg-indigo-500 px-4 py-2 text-sm font-medium hover:bg-indigo-400">Começar</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="mx-auto max-w-6xl px-4 py-16 md:py-24">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+          Agentes de <span class="text-indigo-400">IA</span> para todo tipo de negócio
+        </h1>
+        <p class="mt-5 text-lg text-slate-300">
+          Acelere atendimento, vendas e operações com 12 agentes especializados.
+          Integrações simples e resultados rápidos.
+        </p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-3">
+          <a href="#comecar" class="rounded-xl bg-indigo-500 px-6 py-3 font-medium hover:bg-indigo-400 text-center">Testar grátis</a>
+          <a href="#features" class="rounded-xl border border-white/15 px-6 py-3 font-medium hover:bg-white/10 text-center">Ver recursos</a>
+        </div>
+        <p class="mt-3 text-xs text-slate-400">Sem cartão de crédito • Cancele quando quiser</p>
+      </div>
+      <div class="glass rounded-2xl border border-white/10 p-5">
+        <div class="bg-black/40 rounded-xl p-4 space-y-3 text-sm">
+          <div class="flex items-center justify-between">
+            <span class="text-slate-300">Agente de Atendimento</span>
+            <span class="text-emerald-400 text-xs">online</span>
+          </div>
+          <div class="rounded-lg border border-white/10 p-3 text-slate-300">
+            Cliente: “Qual prazo de entrega?”<br/>
+            Agente: “Pedidos feitos hoje chegam entre 2 e 4 dias úteis. Posso te ajudar a finalizar?”
+          </div>
+          <div class="rounded-lg border border-white/10 p-3 text-slate-300">
+            Cliente: “Quero boleto.”<br/>
+            Agente: “Enviei o link por e‑mail e WhatsApp. Precisa de nota fiscal no CPF ou CNPJ?”
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="mx-auto max-w-6xl px-4 py-12 md:py-16">
+    <h2 class="text-2xl md:text-3xl font-bold">O que você ganha</h2>
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <div class="glass rounded-2xl p-6 border border-white/10">
+        <h3 class="font-semibold">12 agentes prontos</h3>
+        <p class="mt-2 text-slate-300 text-sm">Suporte, Vendas, Cobrança, Conteúdo, Pesquisa, Social e mais.</p>
+      </div>
+      <div class="glass rounded-2xl p-6 border border-white/10">
+        <h3 class="font-semibold">Configuração simples</h3>
+        <p class="mt-2 text-slate-300 text-sm">Conecta em minutos a WhatsApp, site e e‑mail. Sem complicação.</p>
+      </div>
+      <div class="glass rounded-2xl p-6 border border-white/10">
+        <h3 class="font-semibold">Relatórios e métricas</h3>
+        <p class="mt-2 text-slate-300 text-sm">Acompanhe conversões, tempo de resposta e satisfação.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Como funciona -->
+  <section id="como-funciona" class="mx-auto max-w-6xl px-4 py-12 md:py-16">
+    <h2 class="text-2xl md:text-3xl font-bold">Como funciona</h2>
+    <ol class="mt-6 space-y-4 text-slate-300">
+      <li><span class="font-semibold text-white">1.</span> Crie sua conta e escolha os agentes.</li>
+      <li><span class="font-semibold text-white">2.</span> Conecte aos seus canais (site, WhatsApp, e‑mail).</li>
+      <li><span class="font-semibold text-white">3.</span> Acompanhe resultados em tempo real.</li>
+    </ol>
+  </section>
+
+  <!-- Planos -->
+  <section id="planos" class="mx-auto max-w-6xl px-4 py-12 md:py-16">
+    <h2 class="text-2xl md:text-3xl font-bold">Planos simples</h2>
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <div class="glass rounded-2xl p-6 border border-white/10">
+        <h3 class="font-semibold">Gratuito</h3>
+        <p class="text-sm text-slate-300">Até 1 agente • 200 mensagens/mês</p>
+        <p class="mt-4 text-3xl font-extrabold">R$ 0</p>
+      </div>
+      <div class="glass rounded-2xl p-6 border border-indigo-400/40 ring-2 ring-indigo-400/40">
+        <h3 class="font-semibold">Pro</h3>
+        <p class="text-sm text-slate-300">Até 6 agentes • 10k mensagens/mês</p>
+        <p class="mt-4 text-3xl font-extrabold">R$ 89/mês</p>
+      </div>
+      <div class="glass rounded-2xl p-6 border border-white/10">
+        <h3 class="font-semibold">Empresarial</h3>
+        <p class="text-sm text-slate-300">Agentes ilimitados • SLA • Suporte dedicado</p>
+        <p class="mt-4 text-3xl font-extrabold">Sob consulta</p>
+      </div>
+    </div>
+    <div id="comecar" class="mt-8">
+      <a href="#" class="rounded-xl bg-indigo-500 px-6 py-3 font-medium hover:bg-indigo-400">Quero começar</a>
+    </div>
+  </section>
+
+  <footer class="mt-16 border-t border-white/10">
+    <div class="mx-auto max-w-6xl px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
+      <p>© <span id="y"></span> Kizirian Max
+      <div class="flex gap-4">
+        <a href="#features" class="hover:text-white">Recursos</a>
+        <a href="#planos" class="hover:text-white">Planos</a>
+        <a href="#" class="hover:text-white">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
